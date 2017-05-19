@@ -1,0 +1,300 @@
+# All pip also have a corresponding pip3
+apt-get update
+Driver intel-microcode
+chown users gaurav and guest
+enable source code and romeo
+apt-get update
+apt-get upgrade
+install linux-image-generic linux-headers-generic # Used 4.4.0-31-generic
+install vim-gnome
+install dconf-cli
+local install .vim/terminal/gnome-terminal-colors-solarized
+install build-essential
+install autogen autoconf autotools-dev automake libtool
+install cmake cmake-curses-gui
+install scons zenity
+install gcovr lcov
+install git-all git-core git-cola gitg
+install gnuplot-x11
+install exuberant-ctags
+install gpredict
+install libhamlib-utils libhamlib2 python-libhamlib2
+install inkscape gimp-plugin-registry
+install conky conky-all
+install cairo-dock cairo-dock-plugin-ins-*
+install audacity
+install python-pip python3-pip
+install python-yaml python3-yaml
+pip install --upgrade pip
+install bless meld
+install colordiff cython cython3
+install lua5.3
+install chromium-browser
+install shutter
+install sqlite3 sqliteman sqiltebrowser
+install gtk-redshift
+install soundconverter picard kid3-qt easytag eyed3
+install texlive-full
+install biber
+install texmaker lyx dot2tex
+install latexmk
+install dia-gnome dia-shapes dia2code
+install dos2unix
+install pdfposter pdfshuffler pdftk
+install deluge deluged deluge-gtk deluge-webui deluge-console deluge-torrent
+install ctorrent bittornado
+firewall rules allow in 6881-6891
+install dosbox virtualbox
+install valgrind
+install vlc vlc-plugin-notify
+install uints weather-util weather-util-data
+install traceroute nmap zenmap whois dsniff ndiff iptraf wireshark
+gpasswd -a gaurav wireshark
+usermod -a -G wireshark gaurav
+install doxygen doxygen-gui
+install pandoc
+install gparted gprename grsync
+install gnuradio
+install iptables
+install cloc sloccount
+install trash-cli
+install android-tools-adb android-tools-adbd android-tools-fastboot android-tools-fsutils
+install openssh-server openssh-sftp-server fail2ban
+firewall rules allow in 22
+firewall rules allow in 80, 443, 8000
+install paperkey
+install geany geany-plugins
+install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-plugins-good gstreamer1.0-libav gstreamer1.0-alsa  gstreamer1.0-vaapi gstreamer1.0-fluendo-mp3 gstreamer1.0-alsa frei0r-plugins
+install id3 id3v2 id3tool id3ren
+install mysql-client mysql-server postgresql
+install atop powertop iotop ntop
+install cw morse
+install blender
+install calibre
+install cheese
+install python-setuptools python-setuptools-git python-setuptools-scm
+install python3-setuptools python3-setuptools-git python3-setuptools-scm
+install multiarch-support
+install at
+install cmus cmus-install-ffmpeg
+install filezilla
+install finger
+install inotify-tools inotify-hookable
+install python-dev python3-dev
+install mono-xbuild golang-go nodejs-legacy npm rustc cargo
+npm install -g typescript
+install mtp-tools
+install sshfs
+install checkinstall
+# install mono from upstream
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
+install mono-devel
+install libgnome-keyring-dev
+cd /usr/share/doc/git/contrib/credential/gnome-keyring && sudo make
+etc udev 51 android
+install banshee-extension-*
+install exfat-utils exfat-fuse
+install linux 4.6.3
+install cdrdao
+install xsane
+inst iscan bundle 
+install libfreetype6-dev libpng12-dev
+pip install flake8 pudb pygame numpy scipy matplotlib
+install gpick gcolor2
+install libgoo-canvas-perl
+install libimage-exiftool-perl
+install google-talk-plugin
+install colorgcc
+install virtualbox-qt
+install evince
+install geogebra-gnome
+install tree
+install asciidoc asciidoctor
+
+# Compile vim manually
+remove vim-*
+install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev ruby-dev lua5.1-dev tcl-dev
+build-dep vim-gtk3
+compile and install vim from sources configured by :./configure --with-features=huge --enable-multibyte --enable-rubyinterp --enable-pythoninterp --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu/ --enable-python3interp --with-python3-config-dir=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu/ --enable-perlinterp --enable-luainterp --enable-gui=gtk3 --enable-cscope
+sudo update-alternatives --install /usr/bin/editor editor /usr/local/bin/vim  20
+sudo update-alternatives --config editor #4
+
+edit /etc/default/grub
+	remove splash
+	add resume=/dev/mapper/lmde_VG-lmde_swap_LV
+install dconf-editor
+install gtk-gnutella
+
+echo "deb http://deb.torproject.org/torproject.org xenial main" | sudo tee /etc/apt/sources.list.d/tor.list
+gpg --keyserver keys.gnupg.net --recv 886DDD89
+gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
+install deb.torproject.org-keyring tor torbrowser-launcher torchat
+
+pip install --upgrade eyed3 BeautifulSoup
+pip install beautifulsoup4
+install tulip
+install libsqlite3-dev
+install screenkey
+install libav-tools
+install x11vnc gvncviewer ssvnc
+install povray
+install python-bluez bluewho blueproximity bluemon
+pip install ephem
+install postgresql postgresql-contrib pgadmin3
+install expect
+install gtkterm
+sudo usermod -a -G dialout gaurav
+
+install ca-certificates apt-transport-https
+sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D 
+echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc/apt/sources.list.d/docker.list
+sudo apt-get update
+install docker-engine
+sudo groupadd docker
+sudo usermod -a -G docker gaurav
+
+install glade
+install default-jdk default-jre
+install ant
+
+pip install termcolor
+
+install kicad geda geda-utils
+install libffi-dev
+pip install cairocffi
+
+install debtree
+
+install paperkey qrencode zbar-tools
+install xfburn
+install gmtp
+install spell
+install pypy
+
+install wine (4nec)
+pip install pint uncertainities
+
+install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+install libxvidcore-dev libx264-dev
+install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
+install libatlas-base-dev gfortran
+pip install virtualenv virtualenvwrapper
+
+install cuetools shntool flac
+
+install swig
+pip install zmq
+
+install gerbv
+pip install sympy
+
+install ipython ipython3
+
+install ddccontrol
+
+install lxc debootstrap bridge-utils lxc-templates lxd libvirt0
+usermod -a -G gaurav lxd
+
+install cgroup-tools
+follow myles.sh/configuring-lxc-unprivileged-containers-in-debian-jessie
+install sbuild
+install vagrant
+
+install nfs-server
+remove nfs-common nfs-kernel-server
+
+install splint
+install mercurial
+install docbook
+install fop
+install python-epydoc python-docutils python3-docutils
+
+install gtimer stopwatch
+install parallel
+
+install dupload dput reportbug
+
+install tortoisehg
+install postfix mailutils procmail libsasl2-2 ca-certificates libsasl2-modules
+install geda-utils geda-examples gerbv pcb
+
+sudo add-apt-repository ppa:js-reynaud/kicad-4
+install kicad
+
+install ack-grep
+
+pip install satnogsclient
+
+install oregano gnucap
+
+install nasm
+install gdc
+
+remove gnuplot-x11
+install gnuplot-qt
+install ngspice
+
+remove ipython ipython3
+pip install jupyter holoviews bokeh
+pip install holoviews[all]
+sudo apt-add-repository ppa:freecad-maintainers/freecad-stable
+install freecad
+
+# Nightly
+sudo add-apt-repository --yes ppa:js-reynaud/ppa-kicad
+install kicad
+
+install gcc-mingw-w64
+
+install myrepos
+install atool patool rar unrar
+install clang
+
+# Regression where banshee cinnamon integration failed
+downgrade mono-runtime to 4.2.1.102+dfsg2-7ubuntu4 
+mark hold mono-runtime
+
+install perl-doc
+
+install git-dpm
+
+sudo add-apt-repository ppa:pelle-vincent-n/telepad-ppa
+install telepad
+install banshee-community-extensions
+
+install simon julius julius-voxforge sphinxtrain jovie pocketsphinx
+install python-selenium python3-selenium
+
+install mpg321
+
+install qemu qemu-kvm
+install openshot pitivi
+
+sudo ln -s /usr/local/bin/vim /usr/bin/vim
+
+# scanner
+install libltdl-dev
+
+pip2 install supervisor
+
+install bison-doc
+install bind9-host dnsutils
+
+install isc-dhcp-server
+install lex flex yacc bison
+
+install teeworlds
+install libqt4-dev python-qt5 python3-qt5 python-qt4 python3-qt4 pyside-tools python-pyside python3-pyside qt-qmake
+pip PyQt5 QtPy Pyside
+
+install adobe-flashplugin
+
+install octave
+
+sudo ln -s /usr/share/telepad/telepad /usr/local/bin/telepad
+install plantuml
+
+install posterazor
+
+mark hold cli-common=0.9+nmu1 libgtk2.0-cil=2.12.10-6 libglib2.0-cil=2.12.10-6 libglade2.0-cil=2.12.10-6  
