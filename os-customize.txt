@@ -255,6 +255,10 @@ install clang
 downgrade mono-runtime to 4.2.1.102+dfsg2-7ubuntu4 
 mark hold mono-runtime
 
+mark hold libmono-system-workflow-componentmodel4.0-cil libmono-system-workflow-runtime4.0-cil
+
+
+
 install perl-doc
 
 install git-dpm
@@ -298,3 +302,40 @@ install plantuml
 install posterazor
 
 mark hold cli-common=0.9+nmu1 libgtk2.0-cil=2.12.10-6 libglib2.0-cil=2.12.10-6 libglade2.0-cil=2.12.10-6  
+
+apt install thunderbird-gnome-support=1:45.3.0+build1-0ubuntu4 thunderbird=1:45.3.0+build1-0ubuntu4 # From yakkety
+mark hold thunderbird-gnome-support=1:45.3.0+build1-0ubuntu4 thunderbird=1:45.3.0+build1-0ubuntu4 # From yakkety
+
+install cscope
+
+install wings3d
+install openscad
+
+# Add epkowa to /etc/sane.d/dll.conf
+# Comment epson2 from /etc/sane.d/dll.conf
+# From https://askubuntu.com/a/719547/190673
+
+
+# Manually install install github/hub
+gem install github
+
+install moreutils
+
+install mp3diags
+
+install ttf-mscorefonts-installer
+
+
+# Kicad dev
+install libglew-dev libglm-dev freeglut3 freeglut3-dev libcurl3-dev python-wxgtk3.0-dev libwxbase3.0-dev
+build-dep kicad
+
+systemtap strace ltrace fatrace xtrace systemtap-sdt-devk
+usermod -a -G stapusr gaurav
+
+sudo apt-get install --download-only parallel
+ls --sort=version $(compgen -f /var/cache/apt/archives/parallel) |  tail -n 1 | xargs dpkg --force-conflicts -i 
+sudo mv /usr/share/man/man1/parallel.1.gz /usr/share/man/man1/pll.1.gz
+sudo mv /usr/share/man/man1/parallel.moreutils.1.gz /usr/share/man/man1/parallel.1.gz
+sudo mv /usr/bin/parallel /usr/bin/pll
+sudo mv /usr/bin/parallel.moreutils /usr/bin/parallel
