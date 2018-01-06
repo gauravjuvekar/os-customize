@@ -339,3 +339,55 @@ sudo mv /usr/share/man/man1/parallel.1.gz /usr/share/man/man1/pll.1.gz
 sudo mv /usr/share/man/man1/parallel.moreutils.1.gz /usr/share/man/man1/parallel.1.gz
 sudo mv /usr/bin/parallel /usr/bin/pll
 sudo mv /usr/bin/parallel.moreutils /usr/bin/parallel
+remove moreutils
+install -f moreutils # remove parallel (because its renamed to pll, so no conflict)
+
+install linux-tools-common linux-tools-generic# perf tools
+install kcachegrind
+
+
+install ccache
+
+install guacamole libcairo2-dev libjpeg62-dev libpng12-dev libossp-uuid-dev libavcodec-dev libavutil-dev libswscale-dev libpango1.0-dev libssh2-1-dev libtelnet-dev libvncserver-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev
+
+install screenruler
+
+install hunspell hunspell-en-gb
+
+install wxglade
+
+install codeblocks netbeans eclipse
+
+install hwinfo
+
+manually install firefox-52 esr from mozilla to /opt and symlink from /usr/bin/firefox
+apt hold firefox
+
+
+# attempt to fix hotspot https://askubuntu.com/questions/699995/
+install hostapd bridge-utils 
+
+install sysvbanner
+
+pip install pycscope
+install libqt5quickwidgets5 qt5-default qt5-qmake qtbase5-dev qtbase5-dev-tools qttools5-dev-tools 
+manually install github.com/ruben2020/codequery
+
+
+install libwxgtk-media3.0-0v5
+manually install https://github.com/marekr/wxFormBuilder
+
+install cmus
+
+install recoll
+
+install xdot
+
+sudo add-apt-repository ppa:fransschreuder1/qucs
+install qucs
+
+install julia
+
+# libinput gestures https://github.com/bulletmark/libinput-gestures
+sudo usermod -a -G input gaurav
+install xdotool wmctrl libinput-tools
