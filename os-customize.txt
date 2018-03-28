@@ -86,10 +86,12 @@ npm install -g typescript
 install mtp-tools
 install sshfs
 install checkinstall
+
 # install mono from upstream
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
 install mono-devel
+
 install libgnome-keyring-dev
 cd /usr/share/doc/git/contrib/credential/gnome-keyring && sudo make
 etc udev 51 android
@@ -254,7 +256,6 @@ install clang
 # Regression where banshee cinnamon integration failed
 downgrade mono-runtime to 4.2.1.102+dfsg2-7ubuntu4 
 mark hold mono-runtime
-
 mark hold libmono-system-workflow-componentmodel4.0-cil libmono-system-workflow-runtime4.0-cil
 
 
@@ -391,3 +392,54 @@ install julia
 # libinput gestures https://github.com/bulletmark/libinput-gestures
 sudo usermod -a -G input gaurav
 install xdotool wmctrl libinput-tools
+
+install htop
+
+pip install nltk
+
+# Reconfigure postfix as per
+# https://askubuntu.com/questions/2261/how-are-administrators-supposed-to-read-roots-mail
+
+install arp-scan
+
+install autossh
+
+gem install gitlab
+
+install hexer hexdiff hexedit
+
+install radare2
+
+pip install python-crfsuite
+
+install gkt-recordmydesktop
+install kazam
+
+install nec2c xnec2c xnecview
+
+# https://askubuntu.com/a/100246/190673
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+install grub-customizer
+
+install monodevelop
+
+pip install peewee
+
+install renameutils
+install lame
+
+edit /etc/default/grub
+	set GRUB_DISABLE_RECOVERY="true"
+
+apt remove *mono*
+install banshee* monodevelop tomboy
+
+install retext
+
+purge suricata
+
+install hibernate tuxonice-userui
+remove linux-*4.13*
+
+install clang-format universalindentgui
+install clang-5.0 clang-tidy-5.0 clang-format-5.0
