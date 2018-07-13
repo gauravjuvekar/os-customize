@@ -443,3 +443,64 @@ remove linux-*4.13*
 
 install clang-format universalindentgui
 install clang-5.0 clang-tidy-5.0 clang-format-5.0
+
+install stress
+
+install clementine
+install subversion
+install xmlstarlet
+
+remove guacamole tomcat8
+
+unhold chromium
+purge guacamole tomcat8
+rm -rf /var/lib/tomcat8
+
+unhold firefox
+
+install dropbear
+install mpd
+install ncmpc mpc gmpc
+install incron
+
+install curlftpfs lftp ftp
+install ttf-*
+
+install gnucash kmymoney
+install mint-meta-kde plasma-desktop kwin kwin-addons kde-baseapps
+
+unhold thunderbird
+install sparse
+install libelf-dev
+
+install djvulibre-bin pstotext antiword
+pip install rarfile epub
+
+################################################
+#### Upgrade to mint 19
+################################################
+
+install timeshift
+install lightdm lightdm-settings slick-greeter
+purge mdm mint-mdm-themes*
+install mintupgrade
+
+remove python3.5*
+remove gcc-arm-embedded
+install  gcc-arm-none-eabi
+remove xserver-xorg-video-intel-lts-xenial
+
+# Do stuff with scanner
+# https://unix.stackexchange.com/questions/184367/scanimage-does-not-find-scanner-unless-sudoed-but-shows-up-with-sane-find-scan
+
+remove docker*
+# Reinstall docker-ce manually
+install docker-ce
+
+purge waterfox*
+# remove waterfox from sources.list
+# disable apt-cacher-ng
+install squid-deb-proxy squid-deb-proxy-client
+purge apt-cacher-ng
+
+install dh-make
